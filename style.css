@@ -76,7 +76,7 @@ li {
 #discord,
 #contact,
 footer {
-    padding: 48px 0;
+  padding: 48px 0;
 }
 
 /*
@@ -126,6 +126,7 @@ img {
   font-size: 20px;
   line-height: 1.5em;
   margin-bottom: 24px;
+  padding: 0 24px;
 }
 
 /*
@@ -145,22 +146,24 @@ CONTACT
 */
 
 #contact {
-    background-color: #dce9ff;
+  background-color: #dce9ff;
 }
 
 form {
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-input, textarea {
-    margin-bottom: 24px;
-    font-size: 20px;
-    padding: 6px 12px;
-    /* all within the boxes users type in*/
+input,
+textarea {
+  margin-bottom: 24px;
+  font-size: 20px;
+  padding: 6px 12px;
+  /* all within the boxes users type in*/
 }
 
 /*
@@ -170,22 +173,87 @@ FOOTER
 */
 
 footer {
-    background-color: #aaf5ff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #aaf5ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer_logo {
-    max-width: 480px;
-    padding: 0 16px;
+  max-width: 480px;
+  padding: 0 16px;
 }
 
 .footer_links {
-    margin-bottom: 32px;
-
+  margin-bottom: 32px;
 }
 
 .footer_link {
-    padding: 0 16px;
+  padding: 0 16px;
+}
+
+/* SMALL PHONES, TABLETS AND LARGE SMARTPHONES */
+@media (max-width: 728px) {
+  .row {
+    display: flex;
+  }
+
+  .home_description {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home_description--button {
+    max-width: 240px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .subheader {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .section_description {
+    flex-direction: column;
+  }
+
+  .section_description--wrapper {
+    width: 100%;
+  }
+
+  .about_img--wrapper {
+    width: 100%;
+  }
+
+  /*  this flips image to the bottom */
+  #discord .section_description {
+    flex-direction: column-reverse;
+  }
+
+  .footer {
+    padding: 48px 24px;
+  }
+
+  .footer_logo {
+    max-width: 360px;
+  }
+
+  .footer_link {
+    padding: 0 4px;
+    font-size: 18px;
+  }
+
+  .footer_links {
+    margin-bottom: 24px;
+  }
 }
